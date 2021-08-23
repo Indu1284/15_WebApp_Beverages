@@ -10,7 +10,7 @@
 */
 
 // Modul Ablaufsteuerung | Test:
-controller()
+// controller()
 function controller() {
     ausgabe(updateImg(checkAge(getInput())));
 }
@@ -31,7 +31,9 @@ function controller() {
 // Modul: Eingabe | Test:
 // ausgabe(getInput());
 function getInput() {
-    return 2;
+    const inputField  = document.getElementsByName("eingabe")[0];
+    let age = parseInt(inputField.value);
+    return age;
 }
 
 //Modul: Business-Logic (Mapping) | Test:
@@ -58,7 +60,7 @@ function checkAge(age) {
 }
 
 // Modul: Bild aktualisieren | Test:
-// ausgabe(updateImg("cola"));
+//ausgabe(updateImg("cola"));
 //ausgabe(updateImg("milch"));
 function updateImg(imgName) {
     let img = document.getElementById("bevImg");
