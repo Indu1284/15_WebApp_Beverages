@@ -39,17 +39,13 @@ function actonclick() {
 function isinputvalid() {
     let inputstr = field.value;
     let patt = /^[0-9]{1,3}$/g; //1-999
-    let cond = patt.test(inputStr);
+    let cond = patt.test(inputstr);
 
     if (!cond) {
     field.value = "";
     updateImg(data.default.bev);
     }
-    
-    
-    
-    
-    return false;
+    return cond;
 }
 
 // Modul: Eingabe | Test:
