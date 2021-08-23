@@ -50,18 +50,13 @@ function isinputvalid() {
 
 // Modul: Eingabe | Test:
 // ausgabe(getInput());
-function getInput() {
-    const inputField  = document.getElementsByName("eingabe")[0];
-    let age = parseInt(inputField.value);
-    return age;
-}
+
 
 //Modul: Business-Logic (Mapping) | Test:
 
 function getinput() {
-    const inputfield = document.getElementsByName("eingabe")[0];
-    let age = parseInt(inputfield.value);
-    return age;
+    
+    return parseInt(field.value);
 }
 
 function checkage(age) {
